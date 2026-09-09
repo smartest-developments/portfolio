@@ -12,7 +12,7 @@ list.innerHTML = projects.map((project) => `
   <article class="project" data-project="${project.id}">
     <button class="project-summary" type="button" aria-expanded="false" aria-controls="project-${project.id}">
       <span class="project-number">${project.id}</span>
-      <span class="project-title"><span class="project-category">${escapeHtml(project.category)}</span><span class="project-name">${escapeHtml(project.title)}</span></span>
+      <span class="project-title"><span class="project-category">${escapeHtml(project.category)}</span><span class="project-name">${escapeHtml(project.title)}</span><span class="project-reference">Project: ${escapeHtml(project.sourceProject)}</span></span>
       <span class="project-summary-text">${escapeHtml(project.summary)}</span>
       <span class="project-arrow" aria-hidden="true">↗</span>
     </button>

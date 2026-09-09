@@ -4,6 +4,7 @@ export const projects = [
   {
     id: "01",
     title: "AI Cost Guard",
+    sourceProject: "AI-Cost-MGM",
     category: "AI FINOPS",
     summary: "Budget-aware controls for AI operations.",
     challenge: "AI spend is easy to start and hard to observe. This control layer makes daily cost limits visible and turns them into a deliberate operating decision.",
@@ -14,6 +15,7 @@ export const projects = [
   {
     id: "02",
     title: "Personal Memory Engine",
+    sourceProject: "AIPersonalAssistant",
     category: "PRIVATE AI",
     summary: "Searchable context without giving away the source.",
     challenge: "Personal information becomes useful only when it can be found, connected and trusted—without making a cloud copy the default.",
@@ -24,6 +26,7 @@ export const projects = [
   {
     id: "03",
     title: "Lead Intelligence",
+    sourceProject: "OpenOutreach",
     category: "GROWTH OPERATIONS",
     summary: "From an ideal customer profile to an explainable outreach queue.",
     challenge: "Outbound work loses quality when discovery, qualification and follow-up live in separate tools and opaque handoffs.",
@@ -34,6 +37,7 @@ export const projects = [
   {
     id: "04",
     title: "Professional Presence Operations",
+    sourceProject: "JobFinder",
     category: "WORKFLOW DESIGN",
     summary: "A controlled system for professional relationships and content.",
     challenge: "Maintaining a professional presence involves recurring research, judgment and follow-through—not a single automation button.",
@@ -44,6 +48,7 @@ export const projects = [
   {
     id: "05",
     title: "Anna — Legal Intelligence",
+    sourceProject: "LexRoom Analisys",
     category: "VERTICAL AI",
     summary: "A legal-assistant product shaped around evidence and trust.",
     challenge: "Legal AI is only useful when sources, permissions and uncertainty are handled as product features rather than footnotes.",
@@ -54,6 +59,7 @@ export const projects = [
   {
     id: "06",
     title: "Messaging Operations",
+    sourceProject: "WhatsApp-Manager",
     category: "COMMUNICATION SYSTEMS",
     summary: "Structured conversations, backups and actionable signals.",
     challenge: "High-volume messaging becomes operationally expensive when context, media and follow-up live in a stream with no reliable structure.",
