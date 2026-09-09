@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#050506" />
+    <meta
+      name="description"
+      content="Selected AI product and operations work by Simone Salvo."
+    />
+    <title>Simone Salvo — AI Product & Operations</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#work">Skip to selected work</a>
+
+    <header class="site-header shell">
+      <a class="wordmark" href="#top" aria-label="Simone Salvo, home">SS<span>°</span></a>
+      <nav aria-label="Primary navigation">
+        <a href="#work">Selected work</a>
+        <a href="#principles">Principles</a>
+      </nav>
+      <a class="header-contact" href="mailto:info@simonesalvo.ch">Get in touch <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main id="top">
+      <section class="hero shell" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">AI PRODUCT &amp; OPERATIONS <span class="status-dot" aria-hidden="true"></span></p>
+          <h1 id="hero-title">Systems that turn AI into <em>real work.</em></h1>
+          <p class="hero-intro">
+            I design and operate AI products where strategy, workflow and delivery meet—so useful ideas become dependable systems.
+          </p>
+          <a class="primary-link" href="#work">Explore selected work <span aria-hidden="true">↓</span></a>
+        </div>
+        <figure class="hero-art" aria-label="Abstract system flow artwork">
+          <img src="assets/system-flow-hero.png" alt="Interwoven aluminium and glass forms with cobalt blue light" />
+        </figure>
+        <div class="hero-note">
+          <span>Based in Zurich</span>
+          <span>Private projects, public thinking</span>
+        </div>
+      </section>
+
+      <section class="statement shell" aria-labelledby="statement-title">
+        <p class="section-index">01 / WHAT I DO</p>
+        <div>
+          <h2 id="statement-title">I work on the part after the prototype.</h2>
+          <p>
+            The useful part: shaping a messy problem, connecting the right systems, defining safe automation, and making the result fit the people who use it every day.
+          </p>
+        </div>
+      </section>
+
+      <section class="work shell" id="work" aria-labelledby="work-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-index">02 / SELECTED WORK</p>
+            <h2 id="work-title">A curated view of the systems behind the work.</h2>
+          </div>
+          <p class="section-note">Every project is private. These notes focus on the product decision, operating model and technology—not the source code.</p>
+        </div>
+        <div id="project-list" class="project-list" aria-live="polite"></div>
+      </section>
+
+      <section class="principles shell" id="principles" aria-labelledby="principles-title">
+        <div class="principles-heading">
+          <p class="section-index">03 / OPERATING PRINCIPLES</p>
+          <h2 id="principles-title">Useful automation has to earn trust.</h2>
+        </div>
+        <ol>
+          <li>
+            <span class="principle-number">01</span>
+            <div>
+              <h3>Start with the job</h3>
+              <p>Technology follows the actual decision, handoff or repetitive task that needs to move.</p>
+            </div>
+          </li>
+          <li>
+            <span class="principle-number">02</span>
+            <div>
+              <h3>Keep a human boundary</h3>
+              <p>Automation should be observable, reversible and clear about where a person stays in control.</p>
+            </div>
+          </li>
+          <li>
+            <span class="principle-number">03</span>
+            <div>
+              <h3>Design for the Monday after launch</h3>
+              <p>Operations, maintenance and real-world exceptions are part of the product—not an afterthought.</p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <section class="contact shell" aria-labelledby="contact-title">
+        <p class="section-index">04 / CONTACT</p>
+        <div>
+          <h2 id="contact-title">Have a system worth making <em>useful?</em></h2>
+          <a href="mailto:info@simonesalvo.ch">info@simonesalvo.ch <span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer shell">
+      <span>© <span id="year"></span> Simone Salvo</span>
+      <span>AI Product &amp; Operations</span>
+      <span id="portfolio-updated">Curated from private work</span>
+    </footer>
+  </body>
+</html>
