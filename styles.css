@@ -173,8 +173,23 @@ h1 em,
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center;
+  object-position: 62% 50%;
   opacity: 0.87;
+  transform-origin: 62% 50%;
+  animation: system-orbit 38s linear infinite;
+  will-change: transform;
+}
+
+@keyframes system-orbit {
+  0% {
+    transform: scale(1.08) rotate(0deg);
+  }
+  50% {
+    transform: scale(1.1) rotate(180deg);
+  }
+  100% {
+    transform: scale(1.08) rotate(360deg);
+  }
 }
 
 .hero-note {
@@ -393,4 +408,5 @@ h2 {
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
+  .hero-art img { animation: none !important; }
 }
