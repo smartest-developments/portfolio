@@ -154,62 +154,6 @@ h1 em,
 
 .primary-link span { color: var(--blue); font-size: 1.15rem; }
 
-.hero-art {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-  margin: 0;
-  pointer-events: none;
-}
-
-.hero-art::after {
-  position: absolute;
-  inset: 0;
-  content: "";
-  background: linear-gradient(90deg, #050506 0%, rgba(5, 5, 6, 0.94) 28%, rgba(5, 5, 6, 0.32) 68%, rgba(5, 5, 6, 0.16) 100%);
-}
-
-.hero-art img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: 62% 50%;
-  opacity: 0.87;
-  transform-origin: 62% 50%;
-  animation: system-orbit 46s infinite;
-  will-change: transform;
-}
-
-@keyframes system-orbit {
-  0% {
-    transform: perspective(1500px) translate3d(0, 0, 0) rotateX(4deg) rotateY(-8deg) rotateZ(0deg) scale(1.08);
-    animation-timing-function: cubic-bezier(0.42, 0, 0.6, 1);
-  }
-  13% {
-    transform: perspective(1500px) translate3d(-0.8%, 0.55%, 0) rotateX(-2deg) rotateY(5deg) rotateZ(38deg) scale(1.11);
-    animation-timing-function: cubic-bezier(0.22, 0.7, 0.35, 1);
-  }
-  29% {
-    transform: perspective(1500px) translate3d(0.55%, -0.8%, 0) rotateX(5deg) rotateY(-4deg) rotateZ(103deg) scale(1.085);
-    animation-timing-function: cubic-bezier(0.5, 0, 0.78, 0.38);
-  }
-  47% {
-    transform: perspective(1500px) translate3d(-0.4%, -0.25%, 0) rotateX(-4deg) rotateY(8deg) rotateZ(176deg) scale(1.115);
-    animation-timing-function: cubic-bezier(0.2, 0.72, 0.42, 1);
-  }
-  65% {
-    transform: perspective(1500px) translate3d(0.7%, 0.7%, 0) rotateX(3deg) rotateY(-7deg) rotateZ(249deg) scale(1.09);
-    animation-timing-function: cubic-bezier(0.45, 0, 0.68, 0.35);
-  }
-  82% {
-    transform: perspective(1500px) translate3d(-0.65%, -0.45%, 0) rotateX(-3deg) rotateY(4deg) rotateZ(313deg) scale(1.11);
-    animation-timing-function: cubic-bezier(0.18, 0.74, 0.4, 1);
-  }
-  100% {
-    transform: perspective(1500px) translate3d(0, 0, 0) rotateX(4deg) rotateY(-8deg) rotateZ(360deg) scale(1.08);
-  }
-}
-
 .hero-note {
   position: relative;
   z-index: 2;
@@ -401,8 +345,6 @@ h2 {
   .site-header { grid-template-columns: 1fr auto; min-height: 72px; }
   .site-header nav { display: none; }
   .hero { min-height: 710px; padding-top: 94px; }
-  .hero-art { inset: auto -110px 0 -160px; height: 66%; }
-  .hero-art::after { background: linear-gradient(180deg, #050506 0%, rgba(5, 5, 6, 0.68) 43%, rgba(5, 5, 6, 0.1) 100%); }
   .hero-note { flex-direction: column; gap: 5px; }
   .hero-note span + span::before { display: none; }
   .statement, .principles, .contact { grid-template-columns: 1fr; gap: 34px; }
@@ -426,5 +368,4 @@ h2 {
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
-  .hero-art img { animation: none !important; }
 }
