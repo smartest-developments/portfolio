@@ -176,19 +176,37 @@ h1 em,
   object-position: 62% 50%;
   opacity: 0.87;
   transform-origin: 62% 50%;
-  animation: system-orbit 38s linear infinite;
+  animation: system-orbit 46s infinite;
   will-change: transform;
 }
 
 @keyframes system-orbit {
   0% {
-    transform: scale(1.08) rotate(0deg);
+    transform: perspective(1500px) translate3d(0, 0, 0) rotateX(4deg) rotateY(-8deg) rotateZ(0deg) scale(1.08);
+    animation-timing-function: cubic-bezier(0.42, 0, 0.6, 1);
   }
-  50% {
-    transform: scale(1.1) rotate(180deg);
+  13% {
+    transform: perspective(1500px) translate3d(-0.8%, 0.55%, 0) rotateX(-2deg) rotateY(5deg) rotateZ(38deg) scale(1.11);
+    animation-timing-function: cubic-bezier(0.22, 0.7, 0.35, 1);
+  }
+  29% {
+    transform: perspective(1500px) translate3d(0.55%, -0.8%, 0) rotateX(5deg) rotateY(-4deg) rotateZ(103deg) scale(1.085);
+    animation-timing-function: cubic-bezier(0.5, 0, 0.78, 0.38);
+  }
+  47% {
+    transform: perspective(1500px) translate3d(-0.4%, -0.25%, 0) rotateX(-4deg) rotateY(8deg) rotateZ(176deg) scale(1.115);
+    animation-timing-function: cubic-bezier(0.2, 0.72, 0.42, 1);
+  }
+  65% {
+    transform: perspective(1500px) translate3d(0.7%, 0.7%, 0) rotateX(3deg) rotateY(-7deg) rotateZ(249deg) scale(1.09);
+    animation-timing-function: cubic-bezier(0.45, 0, 0.68, 0.35);
+  }
+  82% {
+    transform: perspective(1500px) translate3d(-0.65%, -0.45%, 0) rotateX(-3deg) rotateY(4deg) rotateZ(313deg) scale(1.11);
+    animation-timing-function: cubic-bezier(0.18, 0.74, 0.4, 1);
   }
   100% {
-    transform: scale(1.08) rotate(360deg);
+    transform: perspective(1500px) translate3d(0, 0, 0) rotateX(4deg) rotateY(-8deg) rotateZ(360deg) scale(1.08);
   }
 }
 
