@@ -262,15 +262,6 @@ h2 {
   line-height: 1;
 }
 
-.project-reference {
-  display: block;
-  margin-top: 9px;
-  color: var(--dim);
-  font-family: var(--mono);
-  font-size: 0.67rem;
-  letter-spacing: 0.045em;
-}
-
 .project-summary-text { color: var(--muted); font-size: 0.92rem; line-height: 1.45; }
 
 .project-arrow {
@@ -361,7 +352,6 @@ h2 {
   .section-note { margin-left: 0; }
   .project-summary { grid-template-columns: 58px 1fr auto; gap: 13px; }
   .project-category { grid-column: 2; grid-row: 2; }
-  .project-reference { margin-top: 7px; }
   .project-summary-text { display: none; }
   .project-arrow { grid-column: 3; grid-row: 1 / 3; }
   .project-detail { grid-template-columns: 1fr; gap: 27px; padding-left: 58px; }
